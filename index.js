@@ -24,3 +24,11 @@ let timerId = setTimeout(function tick() {
     clearInterval(timerId);
   }
 });
+
+const p = document.querySelector('.timer__paragraph');
+p.textContent += 'oolollll';
+
+const timerInput = document.querySelector('.timer__input');
+timerInput.addEventListener('change', () => {
+
+})

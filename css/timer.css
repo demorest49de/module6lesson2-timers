@@ -3,5 +3,27 @@
 }
 
 .timer__text-label {
-    padding-right: 94px;
+    padding-right: 102px;
+}
+
+.timer__input{
+    min-width: 294px;
+    display: inline-block;
+    width: unset;
+}
+
+.timer__title{
+    margin-bottom: 15px;
+}
+
+.timer__paragraph{
+    width: 482px;
+    min-height: 250px;
+    overflow-x: hidden;
+    border: 1px solid #ccc;
+    padding:5px;
+    margin: 1px;
+    display: inline-block;
+    float: left;
+    clear: left;
 }
