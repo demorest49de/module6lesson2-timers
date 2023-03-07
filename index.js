@@ -13,22 +13,31 @@
 //   }, 1500,
 //   'hi');
 
-let count = 0;
-let timerId = setTimeout(function tick() {
-  count++;
-  console.log(`yahoo: `, count);
-  if (count < 3) {
-    setTimeout(tick, 1000);
-  } else {
-    console.log('timer stop at: ', count);
-    clearInterval(timerId);
-  }
-});
+// let count = 0;
+// let timerId = setTimeout(function tick() {
+//   count++;
+//   console.log(`yahoo: `, count);
+//   if (count < 3) {
+//     setTimeout(tick, 1000);
+//   } else {
+//     console.log('timer stop at: ', count);
+//     clearInterval(timerId);
+//   }
+// });
 
 const p = document.querySelector('.timer__paragraph');
-p.textContent += 'oolollll';
+p.textContent += '';
+
+const delayText = callback => {
+  setTimeout(() => {
+    callback();
+  }, 300);
+};
 
 const timerInput = document.querySelector('.timer__input');
-timerInput.addEventListener('change', () => {
-
-})
+timerInput.addEventListener('input', (e) => {
+  delayText( () => {
+    const target = e.target;
+    p.textContent = target.value;
+  });
+});
