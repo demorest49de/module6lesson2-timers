@@ -1,3 +1,8 @@
+.timer__title-block{
+    display: flex;
+    flex-direction: column;
+}
+
 .timer__text-label {
     padding-right: 102px;
 }
@@ -12,21 +17,17 @@
     margin-bottom: 15px;
 }
 
-.timer__paragraph{
+.timer__subblock{
+    display: flex;
+    flex-direction: column;
+}
 
+.timer__paragraph{
     font-weight: 700;
-    width: 482px;
+    max-width: 482px;
     min-height: 250px;
-    overflow-x: hidden;
     border: 1px solid #ccc;
     padding:5px;
     margin: 1px;
-    display: inline-block;
-    float: left;
-    clear: left;
     word-wrap: break-word;
-}
-
-.timer__label-block{
-    display: block;
 }

@@ -17,3 +17,10 @@ body {
     background-color: #6f42c1;
     color: #FFCA45;
 }
+
+.container {
+    padding: 10px 10px;
+    margin: 0;
+    max-width: 1920px;
+    min-height: fit-content;
+}
