@@ -1,16 +1,12 @@
-const p = document.querySelector('.timer__paragraph');
-p.textContent += '';
+import control from './modules/control.js';
+const {delayOutput} = control;
+{
+  const init = (appSelector) => {
+    const app = document.querySelector(appSelector);
 
-const delayText = callback => {
-  setTimeout(() => {
-    callback();
-  }, 300);
-};
+    //functionality
+    delayOutput();
 
-const timerInput = document.querySelector('.timer__input');
-timerInput.addEventListener('input', (e) => {
-  delayText( () => {
-    const target = e.target;
-    p.textContent = target.value;
-  });
-});
+  };
+  window.AppInit = init;
+}
