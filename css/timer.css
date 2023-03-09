@@ -1,6 +1,7 @@
 .timer__title-block{
     display: flex;
     flex-direction: column;
+    margin-bottom: 5px;
 }
 
 .timer__text-label {

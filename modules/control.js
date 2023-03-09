@@ -4,7 +4,7 @@ const setDelayText = callback => {
   }, 300);
 };
 
-const delayOutput = () => {
+export  const delayOutput = () => {
   const timerOutput = document.querySelector('.timer__input');
   const p = document.querySelector('.timer__paragraph');
 
@@ -14,8 +14,4 @@ const delayOutput = () => {
       p.textContent = target.value;
     });
   });
-};
-
-export default {
-  delayOutput,
 };

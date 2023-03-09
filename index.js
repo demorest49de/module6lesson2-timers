@@ -1,9 +1,14 @@
-import control from './modules/control.js';
-const {delayOutput} = control;
+import {
+  delayOutput,
+} from './modules/control.js';
+import {
+  renderApp,
+} from './modules/render.js';
+
 {
   const init = (appSelector) => {
     const app = document.querySelector(appSelector);
-    // renderApp();
+    renderApp(app);
 
     //functionality
     delayOutput();
