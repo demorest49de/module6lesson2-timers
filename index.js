@@ -12,7 +12,6 @@ import {
 
     //functionality
     delayOutput();
-
   };
   window.AppInit = init;
 }
