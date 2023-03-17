@@ -26,9 +26,10 @@
 .timer__paragraph{
     font-weight: 700;
     max-width: 482px;
-    min-height: 250px;
+    min-height: 150px;
     border: 1px solid #ccc;
     padding:5px;
     margin: 1px;
     word-wrap: break-word;
+    overflow-y: clip;
 }
