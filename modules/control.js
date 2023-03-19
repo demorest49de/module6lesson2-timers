@@ -1,17 +1,13 @@
-const setDelayText = callback => {
-  setTimeout(() => {
-    callback();
-  }, 300);
-};
+export const delayOutput = () => {
+    const timerInput = document.querySelector('.timer__input');
+    const p = document.querySelector('.timer__paragraph');
+    timerInput.focus();
+    let timeoutId = 0;
+    timerInput.addEventListener('keyup', () => {
+        clearTimeout(timeoutId);
 
-export  const delayOutput = () => {
-  const timerOutput = document.querySelector('.timer__input');
-  const p = document.querySelector('.timer__paragraph');
-
-  timerOutput.addEventListener('keyup', (e) => {
-    setDelayText(() => {
-      const target = e.target;
-      p.textContent = target.value;
+        timeoutId = setTimeout(() => {
+            p.textContent = timerInput.value;
+        }, 300);
     });
-  });
 };
