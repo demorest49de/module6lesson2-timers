@@ -1,7 +1,7 @@
-
-  const section = document.createElement('section');
-  section.classList.add('accordion');
-  section.insertAdjacentHTML("beforeend", `
+export const createSection = () => {
+    const section = document.createElement('section');
+    section.classList.add('accordion');
+    section.insertAdjacentHTML("beforeend", `
       <div class="container">
           <ul class="list">
               <li class="question">
@@ -31,4 +31,5 @@
           </ul>
       </div>
   `);
-
+    document.body.appendChild(section);
+};

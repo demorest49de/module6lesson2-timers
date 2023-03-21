@@ -1,11 +1,12 @@
-import create from './modules/create.js';
-{
-  const init = (appSelector) => {
-    const app = document.querySelector(appSelector);
-    renderApp(app);
+import {createSection} from './modules/create.js';
+import {handleAcc} from './modules/acc.js';
 
-    //functionality
-    delayOutput();
-  };
-  window.AppInit = init;
+{
+    const init = () => {
+        createSection();
+        handleAcc();
+    };
+
+    window.AppInit = init;
 }
+
