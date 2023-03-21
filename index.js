@@ -1,10 +1,4 @@
-import {
-  delayOutput,
-} from './modules/control.js';
-import {
-  renderApp,
-} from './modules/render.js';
-
+import create from './modules/create.js';
 {
   const init = (appSelector) => {
     const app = document.querySelector(appSelector);
