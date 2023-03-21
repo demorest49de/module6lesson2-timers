@@ -1,21 +1,45 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport"
-		content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-  <link rel="stylesheet" href="index.css">
-  <script type="module" src="index.js"></script>
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-	  AppInit('#my-app');
-    });
-  </script>
-  <title>M6L2-timers</title>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="index.css">
+    <script type="module" src="index.js"></script>
+    <script>
+        // document.addEventListener('DOMContentLoaded', () => {
+        //   AppInit('#my-app');
+        // });
+    </script>
+    <title>accordion</title>
 </head>
 <body>
-  <div id="my-app"></div>
+<!--  <div id="my-app"></div>-->
+<section class="accordion">
+    <div class="container">
+        <ul class="list">
+            <li class="question">
+                <button type="button">item 1</button>
+                <div class="wrapper">
+                    <span class="text">some text</span>
+                </div>
+            </li>
+            <li class="question">
+                <button type="button">item 2</button>
+                <div class="wrapper">
+                    <span class="text">some text</span>
+                </div>
+            </li>
+            <li class="question">
+                <button type="button">item 3</button>
+                <div class="wrapper">
+                    <span class="text">some text</span>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
 </body>
 </html>
