@@ -1,57 +1,51 @@
-.list {
-    list-style: none;
-    border-radius: 10px;
+.accordion{
+padding: 30px 0;
 }
 
-.question:not(:nth-last-child(1)) {
-    margin-bottom: 10px;
+.container{
+    padding: 0 75px;
 }
 
-.question {
-    display: flex;
-    flex-direction: row;
+.li-question:not(:last-child) {
+    margin-bottom: 32px;
+}
+
+.li-question{
     background-color: #A537BC;
-    /*padding: 15px 30px;*/
     border-radius: 10px;
-    justify-content: space-between;
-    height: 82px;
-    overflow: hidden;
-}
-
-.question-active{
-    height: auto;
-    transition: height .3ms ease-in-out;
-}
-
-.question:after{
-    content: "";
-    min-width: 50px;
-    min-height: 50px;
-    background-size: contain;
-    background-repeat: no-repeat;
+    padding: 30px 70px;
+    font-size: 24px;
     display: flex;
-    align-self: start;
+    flex-direction: column;
+    overflow: hidden;
+    height: 110px;
 }
 
-.question:nth-child(odd):after{
-    background-image: url("https://cdn-icons-png.flaticon.com/512/1828/1828919.png");
-}
-
-.question:nth-child(even):after{
-    background-image: url("https://cdn-icons-png.flaticon.com/512/4315/4315609.png");
-}
-
-.button {
-    min-height: 50px;
-    min-width: 100%;
+.button{
     border-style: none;
     background-color: inherit;
-    color: inherit;
     text-align: start;
-    margin-bottom: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.wrapper{
-    max-width: 750px;
-    padding-left: 56px;
+.button:after{
+    content: "";
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 50px;
+    width: 50px;
+}
+
+.li-question:nth-child(odd) .button:after{
+    background-image: url("https://cdn-icons-png.flaticon.com/512/1828/1828817.png");
+}
+
+.li-question:nth-child(even) .button:after{
+    background-image: url("https://cdn-icons-png.flaticon.com/512/10097/10097174.png");
+}
+
+.text-wrapper{
+    padding: 30px 0 40px 0;
 }

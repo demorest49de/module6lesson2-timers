@@ -4,7 +4,7 @@ export const createSection = () => {
     section.insertAdjacentHTML("beforeend", `
       <div class="container">
           <ul class="list">
-              <li class="question">
+              <li class="li-question">
                   <div class="block">
                       <button class="button" type="button">item 1?</button>
                       <div class="wrapper">
@@ -18,7 +18,7 @@ export const createSection = () => {
                       </div>
                   </div>
               </li>
-              <li class="question">
+              <li class="li-question">
                   <div class="block">
                       <button class="button" type="button">item 2</button>
                       <div class="wrapper">
@@ -30,7 +30,7 @@ export const createSection = () => {
                       </div>
                   </div>
               </li>
-              <li class="question">
+              <li class="li-question">
                   <div class="block">
                       <button class="button" type="button">item 3</button>
                       <div class="wrapper">
@@ -46,7 +46,7 @@ export const createSection = () => {
                       </div>
                   </div>
               </li>
-              <li class="question">
+              <li class="li-question">
                   <div class="block">
                       <button class="button" type="button">item 3</button>
                       <div class="wrapper">

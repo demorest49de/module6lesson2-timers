@@ -3,7 +3,7 @@ import {handleAcc} from './modules/acc.js';
 
 {
     const init = () => {
-        createSection();
+        // createSection();
         handleAcc();
     };
 
