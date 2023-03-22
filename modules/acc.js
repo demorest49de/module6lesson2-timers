@@ -1,9 +1,11 @@
 export const handleAcc = () => {
-    const list = document.querySelector('ul.list');
-    list.addEventListener('click', ({target}) => {
-        if (target.classList.contains('question')) {
+    const list = document.querySelectorAll('.question');
+    console.log(' : ', list);
 
-        }
+    list.forEach((listElem, index) => {
+        listElem.addEventListener('click', ({target}) => {
+
+        });
     });
 };
 
