@@ -25,6 +25,8 @@ padding: 30px 0;
     border-style: none;
     background-color: inherit;
     text-align: start;
+    display: flex;
+    align-items: start;
     position: relative;
     min-height: 70px;
     padding-right: 94px;
