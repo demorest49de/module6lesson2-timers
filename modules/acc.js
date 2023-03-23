@@ -22,8 +22,6 @@ export const handleAcc = () => {
                         `${wrpHeight}px` : `0px`;
                 } else {
                     li.classList.remove('li-question-active');
-                    // txtWrps[i].style.height = `0px`;
-                    console.log(' : ',li);
                 }
             });
         });
