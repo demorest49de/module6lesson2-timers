@@ -1,8 +1,8 @@
-.accordion{
-padding: 30px 0;
+.accordion {
+    padding: 30px 0;
 }
 
-.container{
+.container {
     padding: 0 75px;
 }
 
@@ -10,22 +10,30 @@ padding: 30px 0;
     margin-bottom: 32px;
 }
 
-.li-question{
+.li-question {
     background-color: #A537BC;
     border-radius: 10px;
     padding: 30px 70px;
     font-size: 24px;
     display: flex;
     flex-direction: column;
-    overflow: hidden;
-    height: 130px;
 }
 
-.li-question-active{
+.text-wrapper {
+    height: 0;
+    overflow: hidden;
+    transition: height .5s ease-in-out;
+}
+
+.li-question-active .text-wrapper {
     height: auto;
 }
 
-.button{
+.text{
+    padding: 20px 0;
+}
+
+.button {
     border-style: none;
     background-color: inherit;
     text-align: start;
@@ -36,7 +44,7 @@ padding: 30px 0;
     padding-right: 94px;
 }
 
-.button:after{
+.button:after {
     content: "";
     position: absolute;
     background-repeat: no-repeat;
@@ -47,14 +55,10 @@ padding: 30px 0;
     top: -7px;
 }
 
-.li-question:nth-child(odd) .button:after{
+.li-question:nth-child(odd) .button:after {
     background-image: url("../img/open.svg");
 }
 
-.li-question:nth-child(even) .button:after{
+.li-question:nth-child(even) .button:after {
     background-image: url("../img/open-purple.svg");
-}
-
-.text-wrapper{
-    padding: 30px 0 40px 0;
 }
